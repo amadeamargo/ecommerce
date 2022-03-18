@@ -8,6 +8,10 @@ GET, POST, PUT, and DELETE routes are tested using Insomnia, as shown in the exa
 
 
 
+https://user-images.githubusercontent.com/90944910/158997771-5bd3ff3f-1669-4307-9539-65858a914ba8.mov
+
+
+
 ## Credits
 This app was build using starter code from the Northwesterin Coding Bootcamp week 13 curriculum. 
 
