@@ -15,8 +15,8 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-  Tag.findByPk ({
-    include: [{model: Product}]
+  Tag.findByPk ((req.params.id),{
+    include: {model: Product}
   },
   ).then((tagData=> {
     res.json(tagData);
