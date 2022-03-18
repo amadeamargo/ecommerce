@@ -14,9 +14,10 @@ router.get('/', (req, res) => {
   })
 });
 
-router.get('/:id', (req, res) => {
-  Product.findbyPk((req.params.id), 
-  {include: [
+router.get('/:id', async (req, res) => {
+  await Product.findByPk((req.params.id), 
+  {
+    include: [
     {model: Category}, {model: Tag} 
   ]},
   ).then((productData) => {
