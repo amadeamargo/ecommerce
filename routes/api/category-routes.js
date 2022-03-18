@@ -22,7 +22,7 @@ router.get('/:id', (req, res) => {
   {
     include: [{model:Product}]
   })
-  .then((Category) => {
+  .then((categoryData) => {
     res.json(categoryData)
   })
 });
